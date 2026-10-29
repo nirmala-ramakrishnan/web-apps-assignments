@@ -27,7 +27,23 @@
     <button onclick="addNumbers()">Add the numbers</button>
     <div id="addValue"></div>
 
+    <h3> Example 5: Javascript string </h3>
+    <p> Click "Try it" button to get the length of the string you enter</p>
+    <label> Enter string: <input id = "userString"></label><br>
+    <button onclick="getStringLength()">Try it!</button>
+    <div id="getStringLengthOutput"></div>
+
+    <h3> Example 6: Toggle Password </h3>
+    <label> Enter Password: <input id = "passwordStr" type="text"></label>
+    <label> Show Password <input type="checkbox" id ="togglePasswordOption" onclick="togglePassword()"></label>
     
+    <h3> Example 7: Change Font/Color </h3>
+    <p id = "fontChangeStr" style="font-size: 20pt; color: #ef0808;">This text can change color/font! </p><br>
+    <button onclick="changeFont()">Change Font</button>
+
+    <h3> Example 8: Hide/Show HTML elements </h3>
+    <p id = "toggleDisplayStr" >This text can may disappear! </p><br>
+    <button onclick="toggleDisplay()">Toggle Display</button>
 
     <script src="script.js"></script>
 </body>

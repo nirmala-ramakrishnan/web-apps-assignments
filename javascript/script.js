@@ -26,6 +26,7 @@ function setGreeting() {
 
 }
 
+// When the window starts up, call these function
 window.onload = function () {
     setGreeting();
 }
@@ -47,4 +48,40 @@ function addNumbers()
 
     document.getElementById("addValue").textContent = result; 
 
+}
+
+function getStringLength()
+{
+    let userString = document.getElementById("userString").value; 
+    let lenUserString = userString.length; 
+
+    let outputStr = "\"" + userString + "\" has " + lenUserString + " characters"; 
+    document.getElementById("getStringLengthOutput").textContent = outputStr; 
+}
+
+function togglePassword()
+{
+    let passwordCheck = document.getElementById("togglePasswordOption"); 
+
+    if(passwordCheck.checked)
+        document.getElementById("passwordStr").type = "text"; 
+    else  
+        document.getElementById("passwordStr").type = "password"; 
+}
+
+function changeFont()
+{
+    let fontChangeStr = document.getElementById("fontChangeStr"); 
+    fontChangeStr.style.fontSize = "30pt"; 
+    fontChangeStr.style.color = "blue"; 
+    
+}
+
+function toggleDisplay()
+{
+    let toggleDisplayStr = document.getElementById("toggleDisplayStr"); 
+    if(toggleDisplayStr.style.display == "none")
+        toggleDisplayStr.style.display = "block"; 
+    else 
+        toggleDisplayStr.style.display = "none"; 
 }
